@@ -7,7 +7,7 @@ import net.dv8tion.jda.api.entities.Message;
 public class PingCommand extends Command {
 
     public PingCommand() {
-        super("ping", "teste", new String[]{});
+        super("ping", "teste", new String[]{}, false);
     }
 
     @Override
@@ -15,7 +15,7 @@ public class PingCommand extends Command {
         long time = System.currentTimeMillis();
         message.getChannel().sendMessage("Calculating...").queue(
                 (Message m) -> m.editMessageFormat("Pong: %dms\nHeartBeat: %dms", System.currentTimeMillis() - time,
-                Sirius.getJDA().getGatewayPing()).queue());
+                        Sirius.getJda().getGatewayPing()).queue());
         return true;
     }
 }

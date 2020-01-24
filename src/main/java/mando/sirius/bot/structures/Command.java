@@ -9,11 +9,15 @@ public abstract class Command {
     private String name;
     private String description;
     private String[] needPermissions;
-    public Command(String name, String description, String[] needPermissions){
+    private boolean needAuth;
+
+    public Command(String name, String description, String[] needPermissions, boolean needAuth) {
         this.name = name;
         this.description = description;
         this.needPermissions = needPermissions;
+        this.needAuth = needAuth;
     }
+
     public abstract boolean execute(@Nonnull Message message, String... args);
 
     public String getName() {
@@ -26,5 +30,9 @@ public abstract class Command {
 
     public String[] getNeedPermissions() {
         return needPermissions;
+    }
+
+    public boolean isNeedAuth() {
+        return needAuth;
     }
 }

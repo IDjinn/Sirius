@@ -7,8 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9744c1b2-90e8-4a19-84e1-8f4861b8d2b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/UserInfoCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/ConfigurationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/TextsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/Sirius.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/Sirius.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/discord/PingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/discord/PingCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/hotel/DiscordAuthCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/hotel/DiscordAuthCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/AuthManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/AuthManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/CommandManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/EventManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/UsersManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/UsersManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/structures/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/structures/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Sirius_main_jar/Sirius.main.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Sirius_main_jar/Sirius.main.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Sirius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Sirius.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/PingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/PingCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/hotel/DiscordAuthCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/hotel/DiscordAuthCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/AuthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/AuthManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/EventManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/UsersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/UsersManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/structures/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/structures/Command.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +70,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -57,7 +78,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WarWKnyEYKGl1jS73bVI5mdtUo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -108,9 +131,33 @@
       <workItem from="1579458057178" duration="851000" />
       <workItem from="1579458915824" duration="12031000" />
       <workItem from="1579484894941" duration="2216000" />
-      <workItem from="1579819286567" duration="626000" />
+      <workItem from="1579819286567" duration="757000" />
+      <workItem from="1579825110433" duration="8226000" />
     </task>
+    <task id="LOCAL-00001" summary="Add .gitignore to project">
+      <created>1579819967768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579819967768</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add .gitignore to project">
+      <created>1579819993157</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579819993157</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add .gitignore to project" />
+    <MESSAGE value="Added ConfigurationManager and TextsManager, fix null pointer when try get user while JDA isn't ready." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ConfigurationManager and TextsManager, fix null pointer when try get user while JDA isn't ready." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Project_Structure" timestamp="1579448129033">
@@ -121,10 +168,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579448258068" />
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1579464669382">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1579829077313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1579464669382" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1579829077313" />
     <state x="434" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579398764865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -133,10 +180,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1579487128912" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1579819966870">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1579833361843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579819966870" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579833361843" />
     <state x="410" y="104" key="FileChooserDialogImpl" timestamp="1579399154325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -145,20 +192,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579460052982" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1579819996711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1579819996711" />
     <state x="339" y="157" key="run.anything.popup" timestamp="1579461906326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1579461906326" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/UsersManager.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

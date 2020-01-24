@@ -1,9 +1,10 @@
 package mando.sirius.bot.managers;
 
+import mando.sirius.bot.Sirius;
 import mando.sirius.bot.commands.discord.PingCommand;
+import mando.sirius.bot.commands.discord.habbo.UserInfoCommand;
 import mando.sirius.bot.structures.Command;
 import net.dv8tion.jda.api.entities.Message;
-import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
 import java.util.HashMap;
@@ -18,17 +19,22 @@ public class CommandManager {
     }
 
     public boolean executeCommand(@Nonnull Message message) {
-        if(!message.getContentDisplay().startsWith(">"))
+        if (!message.getContentDisplay().startsWith(">"))
             return false;
 
         String[] split = message.getContentDisplay().substring(1).split("\\s+");
         String key = split[0];
-        if (!key.isEmpty() && commands.containsKey(key))
-            return getCommand(key).execute(message, split);
+        if (!key.isEmpty() && commands.containsKey(key)) {
+            Command cmd = this.getCommand(key);
+            if (cmd.isNeedAuth() && !Sirius.getAuthManager().isAuthenticated(message.getAuthor().getIdLong()))
+                return false;
+            return cmd.execute(message, split);
+        }
         return false;
     }
 
     public void registerCommands() {
+        register(new UserInfoCommand());
         register(new PingCommand());
     }
 

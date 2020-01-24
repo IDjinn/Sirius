@@ -2,14 +2,8 @@ package mando.sirius.bot.managers;
 
 import com.eu.habbo.Emulator;
 import mando.sirius.bot.Sirius;
-import mando.sirius.bot.structures.SiriusUser;
-import net.dv8tion.jda.api.entities.Role;
-import net.dv8tion.jda.api.events.DisconnectEvent;
 import net.dv8tion.jda.api.events.ReadyEvent;
-import net.dv8tion.jda.api.events.ReconnectedEvent;
-import net.dv8tion.jda.api.events.guild.GuildJoinEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
-import net.dv8tion.jda.api.events.message.MessageUpdateEvent;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -42,6 +36,7 @@ public class EventManager extends ListenerAdapter {
 
     @Override
     public void onReady(@Nonnull ReadyEvent event) {
+        Sirius.onReady();
         Emulator.getLogging().logStart("[Sirius B0T] Ready!");
     }
 }

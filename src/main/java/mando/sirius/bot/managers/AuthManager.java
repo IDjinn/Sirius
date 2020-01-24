@@ -1,7 +1,6 @@
 package mando.sirius.bot.managers;
 
 import com.eu.habbo.Emulator;
-import com.eu.habbo.habbohotel.users.Habbo;
 import com.eu.habbo.habbohotel.users.HabboInfo;
 import mando.sirius.bot.Constants;
 import mando.sirius.bot.Sirius;
@@ -25,6 +24,10 @@ public class AuthManager {
     public AuthManager() {
     }
 
+    public boolean isAuthenticated(long id) {
+        return Sirius.getUsersManager().userExists(id);
+    }
+
     public void checkMemberAuth(@Nonnull GuildMemberJoinEvent event) {
         if (Sirius.getUsersManager().userExists(event.getUser().getIdLong())) {
             addAuthRole(event.getGuild(), event.getUser());
@@ -39,10 +42,11 @@ public class AuthManager {
         if (token.isEmpty() || !Emulator.isReady || !authPending.containsKey(token))
             return false;
 
-        HabboInfo habboInfo = authPending.remove(token);
+        HabboInfo habboInfo = authPending.get(token);
         if (habboInfo == null)
             return false;
 
+        authPending.remove(token);
         if (this.saveUser(habboInfo.getId(), event.getAuthor().getIdLong())) {
             Sirius.getUsersManager().addUser(event.getAuthor().getIdLong(), new SiriusUser(event.getAuthor(), habboInfo));
             addAuthRole(event.getGuild(), event.getAuthor());
