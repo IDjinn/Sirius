@@ -60,7 +60,11 @@ public class AuthManager {
     private void addAuthRole(@Nonnull Guild guild, @Nonnull User user) {
         Role role = guild.getRoleById(Constants.AUTH_ROLE);
         if (role != null) {
-            guild.addRoleToMember(user.getIdLong(), role).queue();
+            try {
+                guild.addRoleToMember(user.getIdLong(), role).queue();
+            } catch (Exception e) {
+                Emulator.getLogging().handleException(e);
+            }
         }
     }
 

@@ -1,5 +1,6 @@
 package mando.sirius.bot.managers;
 
+import com.eu.habbo.Emulator;
 import mando.sirius.bot.Sirius;
 import mando.sirius.bot.commands.discord.PingCommand;
 import mando.sirius.bot.commands.discord.habbo.UserInfoCommand;
@@ -22,15 +23,20 @@ public class CommandManager {
         if (!message.getContentDisplay().startsWith(">"))
             return false;
 
-        String[] split = message.getContentDisplay().substring(1).split("\\s+");
-        String key = split[0];
-        if (!key.isEmpty() && commands.containsKey(key)) {
-            Command cmd = this.getCommand(key);
-            if (cmd.isNeedAuth() && !Sirius.getAuthManager().isAuthenticated(message.getAuthor().getIdLong()))
-                return false;
-            return cmd.execute(message, split);
+        try {
+            String[] split = message.getContentDisplay().substring(1).split("\\s+");
+            String key = split[0];
+            if (!key.isEmpty() && commands.containsKey(key)) {
+                Command cmd = this.getCommand(key);
+                if (cmd.isNeedAuth() && !Sirius.getAuthManager().isAuthenticated(message.getAuthor().getIdLong()))
+                    return false;
+                return cmd.execute(message, split);
+            }
+            return false;
+        } catch (Exception e) {
+            Emulator.getLogging().logErrorLine(e);
+            return false;
         }
-        return false;
     }
 
     public void registerCommands() {

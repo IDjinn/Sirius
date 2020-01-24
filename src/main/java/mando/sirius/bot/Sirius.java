@@ -29,8 +29,11 @@ public class Sirius extends HabboPlugin implements EventListener {
     private static AuthManager authManager;
     private static CounterManager counterManager;
 
-    public static void onReady() {
-        usersManager = new UsersManager();
+    @Override
+    public void onEnable() {
+        Emulator.getPluginManager().registerEvents(this, this);
+        if (Emulator.isReady)
+            this.init();
     }
 
     public static ConfigurationManager getConfig() {
@@ -42,27 +45,12 @@ public class Sirius extends HabboPlugin implements EventListener {
     }
 
     @Override
-    public void onEnable() {
-        Emulator.getPluginManager().registerEvents(this, this);
-        if (Emulator.isReady)
-            this.init();
-    }
-
-    private void init() {
+    public void onDisable() {
         try {
-            this.prepareTables();
-            configurationManager = new ConfigurationManager();
-            textsManager = new TextsManager();
-            this.prepareTextsAndSettings();
-            this.initConstants();
-            eventManager = new EventManager();
-            this.login();
-            authManager = new AuthManager();
-            commandManager = new CommandManager();
-            counterManager = new CounterManager();
-            Emulator.getLogging().logStart("[Sirius B0T] Started Sirius discord bot");
-        } catch (LoginException e) {
-            Emulator.getLogging().handleException(e);
+            getJda().shutdown();
+            getConfig().saveToDatabase();
+            Emulator.getLogging().logStart("[Sirius B0T] Stopped Sirius discord bot");
+        } catch (Exception e) {
         }
     }
 
@@ -86,11 +74,6 @@ public class Sirius extends HabboPlugin implements EventListener {
         } catch (SQLException e) {
         }
         return false;
-    }
-
-    @EventHandler
-    public void onEmulatorLoaded(EmulatorLoadedEvent event) {
-        this.init();
     }
 
     private void prepareTextsAndSettings() {
@@ -123,13 +106,30 @@ public class Sirius extends HabboPlugin implements EventListener {
         return jda;
     }
 
-    @Override
-    public void onDisable() {
+    @EventHandler
+    public void onEmulatorLoaded(EmulatorLoadedEvent event) {
+        this.init();
+    }
+
+    private void init() {
         try {
-            getJda().shutdown();
-            getConfig().saveToDatabase();
-            Emulator.getLogging().logStart("[Sirius B0T] Stopped Sirius discord bot");
-        } catch (Exception e) {
+            this.prepareTables();
+            configurationManager = new ConfigurationManager();
+            textsManager = new TextsManager();
+            this.prepareTextsAndSettings();
+            this.initConstants();
+            eventManager = new EventManager();
+            this.login();
+            Sirius.getJda().awaitReady();
+            // Await jda ready to load users
+
+            usersManager = new UsersManager();
+            authManager = new AuthManager();
+            commandManager = new CommandManager();
+            counterManager = new CounterManager();
+            Emulator.getLogging().logStart("[Sirius B0T] Ready");
+        } catch (LoginException | InterruptedException e) {
+            Emulator.getLogging().handleException(e);
         }
     }
 

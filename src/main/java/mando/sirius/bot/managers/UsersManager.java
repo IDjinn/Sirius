@@ -38,7 +38,6 @@ public class UsersManager {
         }
     }
 
-
     public Map<Long, SiriusUser> getUsers() {
         return users;
     }
@@ -60,10 +59,11 @@ public class UsersManager {
         return null;
     }
 
-    public boolean userExists(long id){
+    public boolean userExists(long id) {
         return users.containsKey(id);
     }
-    public boolean userFromHabboExists(int id){
+
+    public boolean userFromHabboExists(int id) {
         return usersFromHabbo.containsKey(id);
     }
 

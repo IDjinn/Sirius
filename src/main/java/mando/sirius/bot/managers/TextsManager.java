@@ -15,7 +15,7 @@ public class TextsManager {
         try {
             this.reload();
         } catch (Exception e) {
-            Emulator.getLogging().logErrorLine(e);
+            Emulator.getLogging().handleException(e);
         }
     }
 
@@ -57,7 +57,7 @@ public class TextsManager {
         try {
             return (this.getValue(key, "0").equals("1")) || (this.getValue(key, "false").equals("true"));
         } catch (Exception e) {
-            Emulator.getLogging().logErrorLine(e);
+            Emulator.getLogging().handleException(e);
         }
         return defaultValue;
     }
@@ -72,7 +72,7 @@ public class TextsManager {
         try {
             return Integer.parseInt(this.getValue(key, defaultValue.toString()));
         } catch (Exception e) {
-            Emulator.getLogging().logErrorLine(e);
+            Emulator.getLogging().handleException(e);
         }
         return defaultValue;
     }

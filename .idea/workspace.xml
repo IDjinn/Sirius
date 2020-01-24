@@ -6,29 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9744c1b2-90e8-4a19-84e1-8f4861b8d2b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/UserInfoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/ConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/TextsManager.java" afterDir="false" />
+    <list default="true" id="9744c1b2-90e8-4a19-84e1-8f4861b8d2b6" name="Default Changelist" comment="Added ConfigurationManager and TextsManager, fix null pointer when try get user while JDA isn't ready.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/Sirius.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/Sirius.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/discord/PingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/discord/PingCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/hotel/DiscordAuthCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/hotel/DiscordAuthCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/AuthManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/AuthManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/CommandManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/EventManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/UsersManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/UsersManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/structures/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/structures/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Sirius_main_jar/Sirius.main.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Sirius_main_jar/Sirius.main.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Sirius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Sirius.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/PingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/PingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/hotel/DiscordAuthCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/hotel/DiscordAuthCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/AuthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/AuthManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CounterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CounterManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/EventManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/TextsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/TextsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/UsersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/UsersManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/structures/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/structures/Command.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +118,7 @@
       <workItem from="1579458915824" duration="12031000" />
       <workItem from="1579484894941" duration="2216000" />
       <workItem from="1579819286567" duration="757000" />
-      <workItem from="1579825110433" duration="8226000" />
+      <workItem from="1579825110433" duration="9162000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore to project">
       <created>1579819967768</created>
@@ -148,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579819993157</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added ConfigurationManager and TextsManager, fix null pointer when try get user while JDA isn't ready.">
+      <created>1579833376855</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579833376855</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,10 +173,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1579487128912" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1579833361843">
+    <state x="278" y="0" key="CommitChangelistDialog2" timestamp="1579833407186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579833361843" />
+    <state x="278" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579833407186" />
     <state x="410" y="104" key="FileChooserDialogImpl" timestamp="1579399154325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -196,6 +189,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1579819996711" />
+    <state x="380" y="96" width="606" height="536" key="find.popup" timestamp="1579833809573">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="380" y="96" width="606" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1579833809573" />
     <state x="339" y="157" key="run.anything.popup" timestamp="1579461906326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
