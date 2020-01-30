@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class DiscordAuthCommand extends Command {
     public DiscordAuthCommand() {
-        super("cmd_discord_auth", Sirius.getTexts().getValue("commands.keys.cmd_discord_auth").split(";"));
+        super("cmd_discord_auth", Sirius.getTexts().getValue("sirius.keys.cmd_discord_auth").split(";"));
     }
 
     @Override
