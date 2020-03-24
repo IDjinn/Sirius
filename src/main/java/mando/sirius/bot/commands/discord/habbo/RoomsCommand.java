@@ -20,18 +20,19 @@ public class RoomsCommand extends Command {
     @Override
     public boolean execute(@Nonnull Message message, @Nullable SiriusUser selfUser, String... args) {
         if (Emulator.getGameEnvironment().getRoomManager().getActiveRooms().size() > 0) {
-            String roomsName = "", roomsUsers = "";
+            StringBuilder roomsName = new StringBuilder();
+            StringBuilder roomsUsers = new StringBuilder();
             for (Room room : Emulator.getGameEnvironment().getRoomManager().getActiveRooms()) {
                 if (room == null || room.getUserCount() == 0)
                     continue;
 
-                roomsName += room.getName() + "\n";
-                roomsUsers += room.getCurrentHabbos().size() + "\n";
+                roomsName.append(room.getName()).append("\n");
+                roomsUsers.append(room.getCurrentHabbos().size()).append("\n");
             }
             EmbedBuilder builder = new EmbedBuilder()
                     .setTitle("Quartos Ativos")
-                    .addField("Nome", roomsName, true)
-                    .addField("Usuários", roomsUsers, true)
+                    .addField("Nome", roomsName.toString(), true)
+                    .addField("Usuários", roomsUsers.toString(), true)
                     .setTimestamp(Instant.now());
 
             message.getChannel().sendMessage(builder.build()).queue();

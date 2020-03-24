@@ -7,35 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9744c1b2-90e8-4a19-84e1-8f4861b8d2b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Marcos.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/bubbelalerts_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Logging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/LTDAvailableCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/OnlinesCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/RoomsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/moderation/BanCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/AutomodManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/structures/CounterUpdateScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/Sirius.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/Sirius.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/discord/PingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/discord/PingCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/hotel/DiscordAuthCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/commands/hotel/DiscordAuthCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/AuthManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/AuthManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/CommandManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/managers/EventManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/structures/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mando/sirius/bot/structures/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Sirius_main_jar/Sirius.main.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Sirius_main_jar/Sirius.main.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Sirius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/Sirius.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/PingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/PingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/UserInfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/UserInfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/hotel/DiscordAuthCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/hotel/DiscordAuthCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/AuthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/AuthManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/CounterManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/managers/EventManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/structures/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/structures/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/RoomsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mando/sirius/bot/commands/discord/habbo/RoomsCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +137,9 @@
       <workItem from="1580256044293" duration="52000" />
       <workItem from="1580390166520" duration="2240000" />
       <workItem from="1580399150031" duration="352000" />
-      <workItem from="1580418191848" duration="1181000" />
+      <workItem from="1580418191848" duration="1842000" />
+      <workItem from="1580850976581" duration="596000" />
+      <workItem from="1580915233674" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore to project">
       <created>1579819967768</created>
@@ -194,14 +169,22 @@
       <option name="project" value="LOCAL" />
       <updated>1579834491068</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update to 1.1.0">
+      <created>1580419591050</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580419591050</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add .gitignore to project" />
     <MESSAGE value="Added ConfigurationManager and TextsManager, fix null pointer when try get user while JDA isn't ready." />
     <MESSAGE value="Removed ready event, now the bot await ready to load all managers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed ready event, now the bot await ready to load all managers" />
+    <MESSAGE value="Update to 1.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update to 1.1.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -239,10 +222,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1580003425291" />
-    <state x="278" y="0" key="CommitChangelistDialog2" timestamp="1579834487417">
+    <state x="278" y="0" key="CommitChangelistDialog2" timestamp="1580419564325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="278" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579834487417" />
+    <state x="278" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580419564325" />
     <state x="410" y="104" key="FileChooserDialogImpl" timestamp="1580419376059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
